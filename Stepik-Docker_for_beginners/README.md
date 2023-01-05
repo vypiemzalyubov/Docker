@@ -28,34 +28,28 @@ docker exec container-name cat /etc/hosts - покажет содержимое 
 docker attach container-name - прикрепить контейнер к консоли (STDIN, STDOUT или STDERR)
 ```
 ```
-docker pull image-name - скачать образ на хост
+docker pull image-name - скачать образ на хост из registry
+
+docker push image-name - отправить локальный образ в registry
 ```
 ```
 docker ps - посмотреть список запущенных контейнеров
 
 docker ps -a - посмотреть список всех контейнеров
-```
-```
-docker images - посмотреть список доступных образов на хосте
-```
-```
+
+
 docker stop container-name - остановить запущенный контейнер
 
 docker stop $(docker ps -a -q) - остановить все контейнеры
-```
-```
+
+
 docker rm container-name - удалить контейнер
 
-docker rm -f $(docker ps -aq) - Удалить все запущенные и остановленные контейнеры
+docker rm -f $(docker ps -aq) - удалить все запущенные и остановленные контейнеры
 
 docker container prune - удалить все контейнеры
-```
-```
-docker rmi image-name - удалить образ
 
-docker image prune - удалить все образы
-```
-```
+
 docker inspect container-name - посмотреть подробную информацию о контейнере (сетевые адреса, переменные окружения, политику рестарта и т.д.)
 
 docker logs container-name - посмотреть логи контейнера
@@ -65,6 +59,14 @@ docker container logs -f container-name - получить поток логов
 docker top container-name - отобразить процессы в контейнере
 
 docker stats container-name - статистика использования ресурсов в контейнере
+```
+```
+docker images - посмотреть список доступных образов на хосте
+```
+```
+docker rmi image-name - удалить образ
+
+docker image prune - удалить все образы
 ```
 ```
 docker version - посмотреть версию Docker
