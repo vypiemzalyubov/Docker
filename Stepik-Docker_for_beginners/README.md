@@ -114,6 +114,18 @@ VOLUME — создает точку монтирования для тома
 CMD — устанавливает исполняемый файл для контейнера
 ```
 ```
+docker-compose ps
+
+docker-compose stop
+
+docker-compose up -d
+
+docker-compose down
+
+docker-compose logs
+
+docker-compose up -d --scale wordpress=2
+
 Docker compose
 
 version: '2'
@@ -133,8 +145,6 @@ services:
       - redis_data:/data
 volumes:
   redis_data:
-  
-docker-compose --project-name app-test -f docker-compose.yml up
 ```
 ```
 docker version - посмотреть версию Docker
