@@ -23,14 +23,19 @@ docker run --log-driver none image-name -  запустить контейнер
 docker exec - позволяет выполнять команды на работающем контейнере
 
 docker exec container-name cat /etc/hosts - покажет содержимое файла /etc/hosts на контейнере
-```
-```
-docker attach container-name - прикрепить контейнер к консоли (STDIN, STDOUT или STDERR)
+
+docker exec -it container-name /bin/bash - интерактивно подключиться к контейнеру для управления (exit - выход)
+
+docker attach container-name - прикрепить контейнер к консоли (STDIN, STDOUT или STDERR)/подключиться к контейнеру в реалтайме
 ```
 ```
 docker pull image-name - скачать образ на хост из registry
 
 docker push image-name - отправить локальный образ в registry
+
+docker search image-name - поиск образа в registry
+
+docker history image-name - посмотреть историю образа
 ```
 ```
 docker start container-name - запустить контейнер
@@ -67,12 +72,14 @@ docker stats container-name - статистика использования р
 ```
 ```
 docker images - посмотреть список доступных образов на хосте
-```
-```
+
 docker rmi image-name - удалить образ
 
 docker image prune - удалить все образы
+
+docker image history --no-trunc image-name - посмотреть историю слоёв образа
 ```
+
 ```
 docker version - посмотреть версию Docker
 ```
