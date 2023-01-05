@@ -104,7 +104,7 @@ docker network connect - соединиться с сетью
 docker network disconnect - отсоединиться от сети
 ```
 ```
-Dockerfile:
+Dockerfile
 
 FROM — устанавливает базовый образ
 RUN — выполняет команду в контейнере
