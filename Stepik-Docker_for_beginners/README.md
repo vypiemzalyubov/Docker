@@ -79,7 +79,28 @@ docker image prune - удалить все образы
 
 docker image history --no-trunc image-name - посмотреть историю слоёв образа
 ```
+```
+docker volume create todo-db - создать том(volume) для постоянного хранения файлов
 
+docker volume ls - Отобразить список всех томов
+
+docker volume inspect - инспекция томов
+
+docker volume rm - удалить том
+```
+```
+docker network create todo-app - Создать сеть
+
+docker network rm - удалить сеть
+
+docker network ls - показать все сети
+
+docker network inspect - вся информация о сети
+
+docker network connect - соединиться с сетью
+
+docker network disconnect - отсоединиться от сети
+```
 ```
 docker version - посмотреть версию Docker
 ```
