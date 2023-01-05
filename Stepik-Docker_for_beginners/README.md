@@ -16,9 +16,12 @@ docker run image_name sleep 20 - запустить контейнер из об
 docker run -p 1000:80 image_name - перенаправляет трафик с 80 порта на порт 1000 внутри контейнера (флаг -p)
 
 docker run -v /opt/datadir/:/var/lib/container_name image_name - связать/монтировать директорию на хосте /opt/datadir/ с директорией внутри контейнера /var/lib/container_name (флаг -v)
+
+docker run --log-driver none image_name -  запустить контейнер с отключенным логированием
 ```
 ```
 docker exec - позволяет выполнять команды на работающем контейнере
+
 docker exec container_name cat /etc/hosts - покажет содержимое файла /etc/hosts на контейнере
 ```
 ```
@@ -49,6 +52,14 @@ docker container prune - удалить все контейнеры
 docker rmi image_name - удалить образ
 
 docker image prune - удалить все образы
+```
+```
+docker inspect container_name - посмотреть подробную информацию о контейнере (сетевые адреса, переменные окружения, политику рестарта и т.д.)
+```
+```
+docker logs container_name - посмотреть логи контейнера
+
+docker container logs -f container_name - получить поток логов контейнера
 ```
 ```
 docker version - посмотреть версию Docker
