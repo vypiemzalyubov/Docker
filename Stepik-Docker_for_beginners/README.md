@@ -114,17 +114,17 @@ VOLUME — создает точку монтирования для тома
 CMD — устанавливает исполняемый файл для контейнера
 ```
 ```
-docker-compose ps
+docker-compose up - разворачивает стек из файла docker-compose.yml текущей директории
 
-docker-compose stop
+docker-compose down - останавливает стек и удаляет все контейнеры и сети
 
-docker-compose up -d
+docker-compose stop - остановить стек без удаления контейнеров
 
-docker-compose down
+docker-compose ps - показывает контейнеры за которые отвечает Docker Compose
 
-docker-compose logs
+docker-compose logs - общий пул логов поднятого стека Docker Compose
 
-docker-compose up -d --scale wordpress=2
+docker-compose up --scale wordpress=2 - управление количеством реплик определенной службы
 
 Docker compose
 
