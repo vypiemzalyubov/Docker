@@ -33,6 +33,9 @@ docker pull image-name - скачать образ на хост из registry
 docker push image-name - отправить локальный образ в registry
 ```
 ```
+docker start container-name - запустить контейнер
+
+
 docker ps - посмотреть список запущенных контейнеров
 
 docker ps -a - посмотреть список всех контейнеров
@@ -55,6 +58,8 @@ docker inspect container-name - посмотреть подробную инфо
 docker logs container-name - посмотреть логи контейнера
 
 docker container logs -f container-name - получить поток логов контейнера
+
+docker port container-name - Показать публичный порт контейнера
 
 docker top container-name - отобразить процессы в контейнере
 
