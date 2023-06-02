@@ -160,3 +160,9 @@ volumes:
 ---
 
 `docker version` - посмотреть версию Docker
+
+---
+**Полезные материалы:**
+- [Изучаем Docker](https://habr.com/ru/companies/ruvds/articles/438796/)
+- [Руководство по Docker Compose для начинающих](https://habr.com/ru/companies/ruvds/articles/450312/)
+- [Руководство по Kubernetes](https://habr.com/ru/companies/ruvds/articles/438982/)
