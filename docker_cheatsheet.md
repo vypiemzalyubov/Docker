@@ -165,4 +165,5 @@ volumes:
 **Полезные материалы:**
 - [Изучаем Docker](https://habr.com/ru/companies/ruvds/articles/438796/)
 - [Руководство по Docker Compose для начинающих](https://habr.com/ru/companies/ruvds/articles/450312/)
+- [ENTRYPOINT vs CMD: назад к основам](https://habr.com/ru/companies/southbridge/articles/329138/)
 - [Руководство по Kubernetes](https://habr.com/ru/companies/ruvds/articles/438982/)
