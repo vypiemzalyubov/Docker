@@ -1,4 +1,4 @@
-## Docker commands
+## Docker Cheat Sheet
 
 `docker run image-name` - запустить контейнер из образа (если образа нет локально, скачает его из Docker Hub)
 
