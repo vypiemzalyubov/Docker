@@ -5,4 +5,4 @@
 </div>
 
 - [**Stepik**](https://github.com/vypiemzalyubov/docker/tree/main/Stepik)
-  - [**Docker for beginners / Docker для начинающих + практический опыт**](https://github.com/vypiemzalyubov/docker/tree/main/Stepik/Docker%20for%20beginners)
+  - [**Docker for beginners | Docker для начинающих + практический опыт**](https://github.com/vypiemzalyubov/docker/tree/main/Stepik/Docker%20for%20beginners)
